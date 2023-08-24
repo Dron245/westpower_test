@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			additional contact numbers
+SUBSCRIPTION TO AN INCREASED DISCOUNT
+SUBSCRIBE TO NOTIFICATIONS ABOUT PROMOTIONS
+FAVORITE BRAND
+			<main class="page">
+				<section class="page__profile profile">
+					<div class="profile__container">
+						<h3 class="profile__title title">профиль и интересы</h3>
+						<p class="profile__text text">Здесь вы можете изменять свой email и пароль, а также указать дополнительные номера телефонов для использован ия вашей карты и указать свои интересы</p>
+						<form class="profile__form form form-one" action="#" method="get">
+							<div class="form__item">
+								<div class="form__label">
+									<label for="email" class="form__label-text label">Email</label>
+									<div class="form__label-banner"><span>+2%</span></div>
+								</div>
+								<input id="email" autocomplete="off" type="email" disabled name="form[]" data-error="Ошибка" placeholder="ivan@mail.com" class="form__input input">
+								<div class="form__action">
+									<img src="@img/pancle_g.svg" alt="изменить">
+									<button type="button" class="form__action-btn">Изменить</button>
+								</div>
+							</div>
+							<div class="form__item">
+								<div class="form__label">
+									<label for="pasword" class="form__label-text label">Пароль</label>
+								</div>
+								<input id="pasword" autocomplete="off" type="password" disabled name="form[]" data-error="Ошибка" placeholder="*****" class="form__input input">
+								<div class="form__action">
+									<img src="@img/pancle_g.svg" alt="изменить">
+									<button type="button" class="form__action-btn">Изменить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
