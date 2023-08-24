@@ -40,6 +40,35 @@ FAVORITE BRAND
 						</form>
 					</div>
 				</section>
+				<section class="page__profile profile">
+					<div class="profile__container">
+						<h3 class="profile__title title">дополнительные контактные телефоны</h3>
+						<p class="profile__text text">Вы можете добавить до двух дополнительных номеров телефона.<br>
+							Указанные номера могут быть использованы членами вашей семьи для получения скидки, накопления баллов и покупок по вашей карте</p>
+						<form class="profile__form form form-two" action="#" method="get">
+							<div class="form__item">
+								<div class="form__label">
+									<label for="tel1" class="form__label-text label">Телефон 1</label>
+								</div>
+								<input data-inputmask="'mask': '99-9999999'" id="tel1" autocomplete="off" type="tel"  name="form[]" data-error="Ошибка"  class="form__input input input-tel">
+								<div class="form__action">
+									<img src="@img/pancle_g.svg" alt="изменить">
+									<button type="button" class="form__action-btn">Изменить</button>
+								</div>
+							</div>
+							<div class="form__item">
+								<div class="form__label">
+									<label for="tel2" class="form__label-text label">Телефон 2</label>
+								</div>
+								<input id="tel2" autocomplete="off" type="tel"  name="form[]" data-error="Ошибка" class="form__input input input-tel">
+								<div class="form__action">
+									<img src="@img/pancle_g.svg" alt="изменить">
+									<button type="button" class="form__action-btn">Изменить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

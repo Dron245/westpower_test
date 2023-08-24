@@ -2,12 +2,15 @@
 .page {
 
 	&__profile {
-		margin-top: 50px;
+		margin-top: 3.125rem;
+		margin-bottom: 2rem;
 	}
 }
 .profile {
 
 	&__container {
+		padding-bottom: 4.5rem;
+		border-bottom: 1px solid #F8F8FA;
 	}
 
 	&__title {
@@ -41,16 +44,23 @@
 
 	&__item {
 		position: relative;
+		width: 20.625rem;
+		max-width: 20.625rem;
+		@media (max-width:$mobile){
+			 max-width: 100%;
+			 width: 100%; 
+		}
 	}
 
 	&__label {
 		display: flex;
 		align-items: center;
 		column-gap: 16px;
-		margin-bottom: 7px;
+		//  margin-bottom: 3px;
 	}
 
-	&__labe-text {
+	&__label-text {
+		margin-bottom: 7px;
 	}
 
 	&__label-banner {
@@ -61,6 +71,7 @@
 		height: 32px;
 		background-color: #FFB911;
 		border-radius: 100%;
+		transform: translateY(-3px);
 		span {
 			font-weight: 700;
 			font-size: 13px;
@@ -70,9 +81,7 @@
 	}
 
 	&__input {
-		width: 20.625rem;
-		max-width: 20.625rem;
-
+		
 	}
 
 	&__action {
