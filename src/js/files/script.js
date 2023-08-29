@@ -29,4 +29,12 @@ function documentActions(e) {
 			}
 		}
 	}
+
+	if(targetElement.closest('.menu__top')){
+		targetElement.classList.add('_open')
+	} 
+	if(!targetElement.closest('.menu__top')) {
+		console.log(123);
+		document.querySelector('._open') ? document.querySelector('._open').classList.remove('_open') : null
+	}
 }

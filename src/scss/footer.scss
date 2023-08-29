@@ -1,3 +1,45 @@
 //====================================================================================================
+.footer {
+	margin-top: 4rem;
+	// border-radius: 5px;
+background: #F8F8FA;
+	@media (max-width:$mobile){
+		 margin-top: 2rem; 
+	}
+	&__container {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		display: flex;
+		column-gap: 10px;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width:$mobile){
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			flex-direction: column;
+			row-gap: 2rem;
+		}
+	}
+
+	&__text {
+		// color: #000;
+		// text-align: center;
+		// font-family: Montserrat;
+		// font-size: 14px;
+		// font-style: normal;
+		font-weight: 700;
+		line-height: math.div(16 , 14);
+		text-transform: uppercase;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		column-gap: 17px;
+	}
+
+	&__img {
+	}
+}
 
 //====================================================================================================
